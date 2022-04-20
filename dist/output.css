@@ -468,11 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 /* .card{
     @apply flex flex-col items-center text-center  justify-center
     w-32 md:w-40 h-32 md:h-40 md:flex-row bg-slate-300 text-fuchsia-400;
