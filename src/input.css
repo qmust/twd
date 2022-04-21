@@ -5,7 +5,7 @@
 /* .card{
     @apply flex flex-col items-center text-center  justify-center
     w-32 md:w-40 h-32 md:h-40 md:flex-row bg-slate-300 text-fuchsia-400;
-<<<<<<< 
+
 } */
 
 @layer base{
@@ -39,19 +39,34 @@
 @responsive{
     .rotater-90{
         transform:rotate(90deg);
-    }
+    },
     .rotater-0{
         transform:rotate(0deg);
     }
 }
-@media screen(md) {
+/* @media screen(md) {
     .translate-4x{
         transform:translate-x-4;
     }
-}
+} */
 
-@screen sm{
+@screen sm-500{
     .rotate-0{
         transform:rotate(0deg);
     }
+}
+
+.content-area{
+    height:theme('spacing[2.5]')
+}
+
+.btn-l{
+    @apply p-3;
+}
+input::placeholder{
+    color:aqua
+}
+
+.tailwConf{
+    @apply text-indig-light space-13 ;
 }

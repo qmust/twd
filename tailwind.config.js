@@ -1,11 +1,27 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+//   mode:'jit',
+//   purge:[
+//   './src/**/*.{html,js}',
+//   './src/index.html'
+// ],
+  content: [],
   theme: {
     extend: {
       colors:{
-        "ind400":"indigo-400"
+        indig:{
+          light:'#2ec',
+        },
+      },
+      spacing:{
+        "13":"3.25rem",
+      },
+      screens:{
+        'sm-500':'500px',
       },
     },
+  },
+  variants:{
+    extend:{},
   },
   plugins: [],
 }
