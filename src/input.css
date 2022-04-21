@@ -44,4 +44,14 @@
         transform:rotate(0deg);
     }
 }
+@media screen(md) {
+    .translate-4x{
+        transform:translate-x-4;
+    }
+}
 
+@screen sm{
+    .rotate-0{
+        transform:rotate(0deg);
+    }
+}
