@@ -6,3 +6,39 @@
     @apply flex flex-col items-center text-center  justify-center
     w-32 md:w-40 h-32 md:h-40 md:flex-row bg-slate-300 text-fuchsia-400;
 }
+@layer base{
+    a{
+        @apply text-orange-400 bg-lime-300;
+    }
+}
+/* @layer components{
+    .btn-pre{
+        @apply  p-4 mt-5 mx-auto text-amber-400 bg-orange-400 hover:bg-orange-500 shadow-sm text-md border-2 border-rose-400 border-opacity-50 rounded-md md:rounded-lg text-center md:p-5 md:focus-within:text-fuchsia-500  ;
+    }
+} */
+
+@layer components{
+    .btn{
+        @apply text-amber-400 bg-orange-400 hover:bg-orange-500 text-xl shadow-sm border-2 border-rose-400 border-opacity-50 rounded-md md:rounded-lg text-center md:p-5 md:focus-within:text-fuchsia-500 ;
+    }
+}
+
+@layer utilities{
+    .p-21{
+        padding:5.5rem;
+    }
+    @variants hover,focus{
+        .p-21{
+            padding:5.5rem;
+        }
+    }
+}
+
+@responsive{
+    .rotater-90{
+        transform:rotate(90deg);
+    }
+    .rotater-0{
+        transform:rotate(0deg);
+    }
+}
